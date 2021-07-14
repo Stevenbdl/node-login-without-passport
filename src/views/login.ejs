@@ -1,0 +1,31 @@
+<%- layout('layouts/index') %>
+
+<%- include('partials/messages') %>
+
+<% if(success_msg != '') {%>
+  <div class="alert alert-success text-center alert-dismissible fade show" role="alert">
+    <%= success_msg %>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+<% } %>
+<div class="row">
+  <div class="col-md-4 offset-md-4">
+    <div class="card p-4 text-center">
+      <h3 class="card-header">
+        <h1>Log in</h1>
+      </h3>
+      <div class="card-body">
+        <form action="/login" method="post">
+          <div class="form-group mt-3">
+            <input type="email" name="email" placeholder="Your email" class="form-control" required>
+          </div>
+          <div class="form-group mt-3">
+            <input type="password" name="password" placeholder="Your password" class="form-control" required>
+          </div>
+          <button type="submit" class="btn btn-primary w-100 mt-3">Log in</button>
+        </form>
+      </div>
+      <div class="card-footer">Not register? <a href="/signup">sign up</a></div>
+    </div>
+  </div>
+</div>
