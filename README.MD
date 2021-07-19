@@ -1,7 +1,7 @@
 # Node.js Login without Passport
 
 This is a practice(for me) user login app using Node.js, Express and MongoDB with EJS as template engine.
-Bootstrap(Theme from ![Bootswatch](https://bootswatch.com/) ) is used for styling.
+Bootstrap(Theme from ![Bootswatch](https://bootswatch.com/) is used for styling.
 
 ![Image demo](./demo.png)
 
